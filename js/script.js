@@ -7,6 +7,7 @@ var invia = document.getElementById("invia");
 var nomeForm = document.getElementById("nome");
 var kmForm = document.getElementById("km");
 var etaForm = document.getElementById("eta")
+var reset = document.getElementById("reset")
 const tariffa = 0.21;
 
 invia.addEventListener('click',
@@ -29,6 +30,13 @@ function () {
     
 })
 
+reset.addEventListener('click',
+function () {
+    nomeForm.value = null;
+    kmForm.value = null;
+    etaForm.value = 4;
+    
+})
 
 
 

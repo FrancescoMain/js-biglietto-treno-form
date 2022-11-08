@@ -1,8 +1,6 @@
 
 
 
-// Il programma dovrà chiedere all’utente il numero di chilometri che vuole percorrere e l’età del passeggero.
-
 var invia = document.getElementById("invia");
 var nomeForm = document.getElementById("nome");
 var kmForm = document.getElementById("km");
@@ -26,7 +24,12 @@ function () {
     }
     
     
-    console.log(prezzoBiglietto + nome + km + eta);
+    let nomeTicket = document.getElementById("nomeTicket")
+    nomeTicket.innerHTML = `${nome}`
+    let kmTicket = document.getElementById("kmTicket")
+    kmTicket.innerHTML = `${km}`
+    let prezzoTicket = document.getElementById("prezzoTicket")
+    prezzoTicket.innerHTML = `${prezzoBiglietto.toFixed(2)}€`
     
 })
 
@@ -46,15 +49,6 @@ function () {
 
 
 
-// // L’output del prezzo finale va messo fuori in forma umana (con massimo due decimali, per indicare centesimi sul prezzo). Questo richiederà un minimo di ricerca.
-// let risultato = prezzoBiglietto.toFixed(2);
 
-
-// // BONUS possibili:
-// // elaborazione dell’output come detto, più articolata del semplice prezzo;
-// document.getElementById("title").innerHTML = `In base alla tua età (${eta}) e ai kilometri da percorrere (${km})
-// Il tuo biglietto costerà: = ${risultato}€. `
-
-// // interfaccia un pò eleaorata con CSS.
 
 

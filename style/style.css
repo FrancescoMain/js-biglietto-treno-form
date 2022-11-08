@@ -5,26 +5,35 @@
 }
 
 
-
+a {
+    text-decoration: none;
+    color: #f6f6f6;
+}
+a:hover {
+    color: white;
+}
 .ms_container {
 
-     max-width: 1000px;
+     width: 100vw;
      margin: auto;
-     height: 400px;
+     height: 100vh;
 
 }
 
 .ms_top {
 
     background-color: #404eed;
-    height: 60px;
+    height: 15%;
 
 }
 
 .ms_mid {
 
-    height: 280px;
-
+    height: 70%;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .ms_btn {
@@ -33,3 +42,36 @@
     margin: 20px 20px 0 10px;
 
 }
+
+.ms_container_ticket {
+    padding-top: 80px;
+    width: 900px;   
+    margin: auto;
+    height: 400px;
+
+}
+
+.ms_title_container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100px;  
+
+}
+.ms_mid_ticket {
+
+    height: 70%;
+    background-color: #f6f6f6;
+    display: flex;
+    align-items: center;
+}
+
+/* regole bs  */
+tbody, td, tfoot, th, thead, tr {
+    border: 0px;
+  }
+
+  .table {
+    width: 30%;
+  }

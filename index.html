@@ -13,7 +13,7 @@
     <title>Biglietto del Treno</title>
 </head>
 <body>
-
+    <!-- form section  -->
     <div class="ms_container">
 
         <div class="ms_top">
@@ -43,6 +43,18 @@
                         <option value="2">Over 65</option>
                         </select>
                     </div>
+                    <div class="col-md-2">
+                        <label for="partenza" class="form-label">Da:</label>
+                        <input type="text" class="form-control" id="partenza" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="arrivo" class="form-label">A:</label>
+                        <input type="text" class="form-control" id="arrivo" required>
+                    </div>
+                    <div class="col-md-2">
+                        <label for="data" class="form-label">Data Partenza</label>
+                        <input type="date" class="form-control" id="data" required>
+                    </div>
                 </form>
     
                 <button id="invia" class="btn btn-primary ms_btn" type="submit"><a href="#ticket">Genera</a></button>
@@ -59,7 +71,7 @@
     </div>
 
 
-
+    <!-- ticket section  -->
     <div id="ticket" class="ms_container">
 
         <div class="ms_top">
@@ -76,9 +88,11 @@
                 </div>
             </div>
         </div>
+        
         <div class="ms_mid_ticket">
             <div class="col-5 offset-1">
-                <div class="ms_title_container">
+                <!-- boarding section  -->
+                <div class="ms_mid_container">
                     <!-- bs table ==> https://getbootstrap.com/docs/5.2/content/tables/  -->
                     <table class="table fs-5">
                         <tbody>
@@ -88,15 +102,19 @@
                           </tr>
                           <tr>
                             <td>Da</td>
-                            <th scope="row">Roma</th>
+                            <th scope="row" id="partenzaTicket">Roma</th>
                           </tr>
                           <tr>
                             <td>A</td>
-                            <th scope="row">Milano</th>
+                            <th scope="row" id="arrivoTicket">Milano</th>
                           </tr>
                           <tr>
                             <td>KM</td>
                             <th scope="row" id="kmTicket">50</th>
+                          </tr>
+                          <tr>
+                            <td>Data</td>
+                            <th scope="row" id="dataTicket">24/01/2023</th>
                           </tr>
                           <tr>
                             <td>Prezzo</td>
@@ -104,7 +122,22 @@
                           </tr>
 
                         </tbody>
-                      </table>
+                    </table>
+                    <table class="table fs-5">
+                        <tbody>
+                          <tr>
+                            <td>Treno</td>
+                            <td id="">Ora</th>
+                            <td id="">Binario</th>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="treno">12</th>
+                            <th scope="row" id="orario">14:40</th>
+                            <th  scope="row"id="binario">2</th>
+                          </tr>
+
+                        </tbody>
+                    </table>
                 </div>
             </div>
             <div class="col-2">

@@ -6,6 +6,9 @@ var nomeForm = document.getElementById("nome");
 var kmForm = document.getElementById("km");
 var etaForm = document.getElementById("eta")
 var reset = document.getElementById("reset")
+var partenzaForm = document.getElementById("partenza")
+var arrivoForm = document.getElementById("arrivo")
+var dataForm = document.getElementById("data")
 const tariffa = 0.21;
 
 invia.addEventListener('click',
@@ -30,6 +33,22 @@ function () {
     kmTicket.innerHTML = `${km}`
     let prezzoTicket = document.getElementById("prezzoTicket")
     prezzoTicket.innerHTML = `${prezzoBiglietto.toFixed(2)}€`
+    let partenza = partenzaForm.value
+    let partenzaTicket = document.getElementById("partenzaTicket")
+    partenzaTicket.innerHTML = `${partenza}`
+    let arrivo = arrivoForm.value
+    let arrivoTicket = document.getElementById("arrivoTicket")
+    arrivoTicket.innerHTML = `${arrivo}`
+    let data = dataForm.value
+    let dataTicket = document.getElementById("dataTicket")
+    dataTicket.innerHTML = `${data}`
+
+    document.getElementById("treno").innerHTML = "A" +
+    (Math.floor(Math.random() * 13)+1);
+    document.getElementById("binario").innerHTML =
+    Math.floor(Math.random() * 13);
+    document.getElementById("orario").innerHTML =
+    Math.floor(Math.random() * 25) + ":" + Math.floor(Math.random() * 60) ;
     
 })
 

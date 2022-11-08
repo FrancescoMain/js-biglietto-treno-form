@@ -14,22 +14,56 @@
 
 <div class="ms_container">
     <div class="container">
-        <div class="row"></div>
-        <div class="row"></div>
-        <div class="row"></div>
+        <div class="ms_top">
+            <div class="row">
+
+            </div>
+        </div>
+        <div class="ms_mid">
+            <div class="row justify-content-center pt-5">
+                <!-- bs form ===>    https://getbootstrap.com/docs/5.2/forms/validation/ -->
+                <form class="row g-3 needs-validation" novalidate>
+                    <div class="col-md-4">
+                        <label for="nome" class="form-label">Inserisci il tuo Nome e Cognome</label>
+                        <input type="text" class="form-control" id="nome" value="Mario Rossi" required>
+                        <div class="valid-feedback">
+                        Ottimo
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <label for="km" class="form-label">Km da Percorrere</label>
+                        <input type="text" class="form-control" id="km" value="50" required>
+                        <div class="valid-feedback">
+                        Ottimo
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="eta" class="form-label">Seleziona fascia di età</label>
+                        <select class="form-select" id="eta" required>
+                        <option selected disabled value="">Choose...</option>
+                        <option value="0">Maggiorenne</option>
+                        <option value="1">Minorenne</option>
+                        <option value="2">Over 65</option>
+                        </select>
+                    </div>
+                </form>
+    
+                <button id="invia" class="btn btn-primary ms_btn" type="submit">Genera</button>
+                <button id="reset" class="btn btn-primary ms_btn" type="reset">Reset</button>
+            </div>
+
+        </div>
+        <div class="ms_top">
+            <div class="row">
+
+            </div>
+        </div>
+
     </div>
 </div>
 
-<input id="nome" type="text" placeholder="Nome Cognome">
-<input id="km" type="text" placeholder="Km da percorrere">
-<select  id="eta" required>
-  <option selected disabled value="">Choose...</option>
-  <option value="0">Maggiorenne</option>
-  <option value="1">Minorenne</option>
-  <option value="2">Over 65</option>
-</select>
-<button id="invia">Invia</button>
-<button id="reset">Reset</button>
+
     
 
 <!-- My script  -->

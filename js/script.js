@@ -25,9 +25,10 @@ function () {
     }
     
     
-    console.log(prezzoBiglietto);
+    console.log(prezzoBiglietto + nome + km + eta);
     
 })
+
 
 
 

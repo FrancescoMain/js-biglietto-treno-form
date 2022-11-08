@@ -75,11 +75,29 @@ a:hover {
     justify-content: center;
 
 }
+
+
 /* regole bs  */
 tbody, td, tfoot, th, thead, tr {
     border: 0px;
   }
 
   .table {
+
+    width: 100%;
+
+}
+
+.ms_table {
+
     width: 30%;
-  }
+
+}
+
+td {
+    font-size: 1rem;
+}
+
+th {
+    font-size: 1.2rem;
+}

@@ -94,7 +94,7 @@
                 <!-- boarding section  -->
                 <div class="ms_mid_container">
                     <!-- bs table ==> https://getbootstrap.com/docs/5.2/content/tables/  -->
-                    <table class="table fs-5">
+                    <table class="table fs-5 ms_table">
                         <tbody>
                           <tr>
                             <td>Name</td>
@@ -123,7 +123,7 @@
 
                         </tbody>
                     </table>
-                    <table class="table fs-5">
+                    <table class="table fs-5 ms_table">
                         <tbody>
                           <tr>
                             <td>Treno</td>
@@ -140,9 +140,45 @@
                     </table>
                 </div>
             </div>
-            <div class="col-2">
-                <div class="ms_title_container">
-                    <h2 class="title"><i class="fa-solid fa-train me-3"></i>TRAIN TICKET</h2>
+            <div class="col-4">
+                <div class="ms_mid_container">
+                    <table id="table" class="table fs-5 ">
+                        <tbody>
+                          <tr>
+                            <td>Nome Passeggero</td>
+                            <th scope="row" id="nomeTicket">Mario Rossi</th>
+                            <td>Km Viaggio</td>
+                            <th scope="row" id="kmTicket">50</th>
+                          </tr>
+                          <tr>
+                            <td>Stazione Partenza</td>
+                            <th scope="row" id="partenzaTicket">Roma</th>
+                            <td>Stazione Arrivo</td>
+                            <th scope="row" id="arrivoTicket">Milano</th>
+                          </tr>
+                          <tr>
+                            <td>Data</td>
+                            <th scope="row" id="dataTicket">24/01/2023</th>
+                          </tr>
+                        </tbody>
+                    </table>
+
+                    <table id="table" class="table fs-5 mt-3 ">
+                        <tbody>
+                          <tr>
+                            <td>Prezzo</td>
+                            <td>Orario Partenza</td>
+                            <td>Treno</td>
+                          </tr>
+                          <tr>
+                            <th scope="row" id="prezzoTicket" class="fs-4">36€</th>
+                            <th scope="row" id="orario" class="fs-4">14:40</th>
+                            <th scope="row" id="treno" class="fs-4">12</th>
+                          </tr>
+                        </tbody>
+                    </table>
+
+                    <h5 id="sconto"></h2>
                 </div>
             </div>
         </div>

@@ -10,7 +10,7 @@ var partenzaForm = document.getElementById("partenza")
 var arrivoForm = document.getElementById("arrivo")
 var dataForm = document.getElementById("data")
 const tariffa = 0.21;
-
+var sconto=document.getElementById("sconto")
 invia.addEventListener('click',
 function () {
     var nome = nomeForm.value;
@@ -19,11 +19,12 @@ function () {
     let prezzoBiglietto = km * tariffa;
     if (eta == 1){ 
         prezzoBiglietto = prezzoBiglietto * 0.8
+        sconto.innerHTML=`*Essendo minorenne hai diritto ad uno sconto del 20% che è stato gia applicato al prezzo finale`
     
     }
     if (eta == 2){ 
         prezzoBiglietto = prezzoBiglietto * 0.6;
-    
+        sconto.innerHTML=`*Essendo minorenne hai diritto ad uno sconto del 40% che è stato gia applicato al prezzo finale`
     }
     
     
